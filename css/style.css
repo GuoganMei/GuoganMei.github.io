@@ -23,6 +23,21 @@ hr {
 }
 
 /* code */
+.code-block {
+  position: relative;
+}
+.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  cursor: pointer;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 0;/*3px*/
+  font-size: 12px;
+}
+
 pre {
   border: 1px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
