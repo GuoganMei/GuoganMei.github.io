@@ -1,7 +1,20 @@
-body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+@font-face {
+  font-family: "LXGWWenKaiScreen";
+  src: url("/fonts/LXGWWenKaiScreen.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "LXGWWenKaiGB";
+  src: url("/fonts/LXGWWenKaiGB-Regular.ttf") format("truetype");
+}
+
+/* "Times New Roman" */
+body{
+  font-family:"Times New Roman", "SimSun",Candara, Calibri, Arial, sans-serif;
+}
+
 code {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Consolas", Monaco, monospace;
   font-size: 85%;
 }
+

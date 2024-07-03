@@ -6,8 +6,15 @@
     <description>Recent content in Home on Notebook</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>骑行G331边境公路</title>
+      <link>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</guid>
+      <description>纪念沿G331国道由虎林市骑行到中国最东端抚远市旅行经历</description>
+    </item>
     <item>
       <title>Another Note on A blogdown Tutorial</title>
       <link>http://localhost:1313/note/2017/06/14/another-note/</link>
@@ -28,13 +35,6 @@
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/2016/02/14/a-plain-markdown-post/</guid>
       <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.&#xA;1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Goldmark by default, and an R Markdown document is compiled by rmarkdown and Pandoc.</description>
-    </item>
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>http://localhost:1313/post/2015/07/23/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2015/07/23/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#xA;Quisque mattis volutpat lorem vitae feugiat.</description>
     </item>
     <item>
       <title>About Hugo XMin</title>
