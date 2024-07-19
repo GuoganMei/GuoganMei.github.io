@@ -4,17 +4,25 @@
 }
 
 @font-face {
-  font-family: "LXGWWenKaiGB";
-  src: url("/fonts/LXGWWenKaiGB-Regular.ttf") format("truetype");
+  font-family: "qiji";
+  src: url("/fonts/qiji.ttf") format("truetype");
 }
 
-/* "Times New Roman" */
-body{
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("/fonts/SourceCodePro-Regular.ttf") format("truetype");
+}
+
+/* body{
   font-family:"Times New Roman", "SimSun",Candara, Calibri, Arial, sans-serif;
+} */
+
+body{
+  font-family:"LXGWWenKaiScreen", Candara;
 }
 
 code {
-  font-family: "Consolas", Monaco, monospace;
+  font-family: "SourceCodePro";/*,"Consolas"*/
   font-size: 85%;
 }
 

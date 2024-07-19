@@ -5,8 +5,8 @@ body {
   line-height: 1.5;
 }
 
+
 /* header and footer areas */
-.menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
@@ -18,9 +18,12 @@ body {
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {
-  border-style: dashed;
+  border-style: solid;
   color: #ddd;
 }
+
+/*nav area*/
+
 
 /* code */
 .code-block {
