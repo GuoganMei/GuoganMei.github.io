@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Others on Notebook</title>
-    <link>http://localhost:1313/tags/others/</link>
+    <link>https://GuoganMei.github.io/tags/others/</link>
     <description>Recent content in Others on Notebook</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/others/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://GuoganMei.github.io/tags/others/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>骑行G331边境公路</title>
-      <link>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</link>
+      <link>https://GuoganMei.github.io/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</guid>
+      <guid>https://GuoganMei.github.io/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</guid>
       <description>纪念沿G331国道由虎林市骑行到中国最东端抚远市旅行经历</description>
     </item>
   </channel>

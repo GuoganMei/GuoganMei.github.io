@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://GuoganMei.github.io/categories/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://GuoganMei.github.io/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/others/</loc>
+    <loc>https://GuoganMei.github.io/tags/others/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://GuoganMei.github.io/post/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://GuoganMei.github.io/tags/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/%E6%B8%B8%E8%AE%B0%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
+    <loc>https://GuoganMei.github.io/categories/%E6%B8%B8%E8%AE%B0%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</loc>
+    <loc>https://GuoganMei.github.io/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/2017/06/14/another-note/</loc>
+    <loc>https://GuoganMei.github.io/note/2017/06/14/another-note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/example/</loc>
+    <loc>https://GuoganMei.github.io/categories/example/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/</loc>
+    <loc>https://GuoganMei.github.io/note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <loc>https://GuoganMei.github.io/tags/tutorial/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/note/2017/06/13/a-quick-note/</loc>
+    <loc>https://GuoganMei.github.io/note/2017/06/13/a-quick-note/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2016/02/14/a-plain-markdown-post/</loc>
+    <loc>https://GuoganMei.github.io/post/2016/02/14/a-plain-markdown-post/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blogdown/</loc>
+    <loc>https://GuoganMei.github.io/tags/blogdown/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/hugo/</loc>
+    <loc>https://GuoganMei.github.io/categories/hugo/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>https://GuoganMei.github.io/tags/markdown/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mathjax/</loc>
+    <loc>https://GuoganMei.github.io/tags/mathjax/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pandoc/</loc>
+    <loc>https://GuoganMei.github.io/tags/pandoc/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rstudio/</loc>
+    <loc>https://GuoganMei.github.io/tags/rstudio/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://GuoganMei.github.io/about/</loc>
   </url>
 </urlset>

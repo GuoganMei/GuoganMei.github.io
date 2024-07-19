@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Notebook</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://GuoganMei.github.io/post/</link>
     <description>Recent content in Posts on Notebook</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://GuoganMei.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>骑行G331边境公路</title>
-      <link>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</link>
+      <link>https://GuoganMei.github.io/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</guid>
+      <guid>https://GuoganMei.github.io/post/2024/07/03/%E9%AA%91%E8%A1%8Cg331%E8%BE%B9%E5%A2%83%E5%85%AC%E8%B7%AF/</guid>
       <description>纪念沿G331国道由虎林市骑行到中国最东端抚远市旅行经历</description>
     </item>
     <item>
       <title>A Plain Markdown Post</title>
-      <link>http://localhost:1313/post/2016/02/14/a-plain-markdown-post/</link>
+      <link>https://GuoganMei.github.io/post/2016/02/14/a-plain-markdown-post/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2016/02/14/a-plain-markdown-post/</guid>
+      <guid>https://GuoganMei.github.io/post/2016/02/14/a-plain-markdown-post/</guid>
       <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.&#xA;1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Goldmark by default, and an R Markdown document is compiled by rmarkdown and Pandoc.</description>
     </item>
   </channel>
