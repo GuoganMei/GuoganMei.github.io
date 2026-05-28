@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>博客文章标题一 - Your Name</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>(function(){var l=localStorage.getItem('site-lang');if(l==='en')document.documentElement.lang='en';})();</script>
+  <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="site-name" href="../index.html">Your Name</a>
+      <a href="../about.html"><span class="zh">关于我</span><span class="en">About</span></a>
+      <a href="../publications.html"><span class="zh">出版物</span><span class="en">Publications</span></a>
+      <a href="../projects.html"><span class="zh">项目</span><span class="en">Projects</span></a>
+      <a href="../blog.html" class="active"><span class="zh">博客</span><span class="en">Blog</span></a>
+      <a href="../archive.html"><span class="zh">档案</span><span class="en">Archive</span></a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <article class="page-content">
+      <p class="post-meta">
+        <a href="../blog.html">← <span class="zh">博客</span><span class="en">Blog</span></a>
+        &nbsp;·&nbsp; 2026.04
+      </p>
+
+      <h1>
+        <span class="zh">博客文章标题一</span>
+        <span class="en">Blog Post Title One</span>
+      </h1>
+
+      <p>
+        <span class="zh">这是一篇用 HTML 写的博客文章示例。你可以在这里写任何内容，包括带公式的段落。</span>
+        <span class="en">This is an example blog post written in HTML. You can write anything here, including paragraphs with formulas.</span>
+      </p>
+
+      <h2><span class="zh">小节标题</span><span class="en">Section Title</span></h2>
+
+      <p>
+        <span class="zh">例如，考虑函数 $f(x) = \frac{1}{2}\|Ax - b\|^2$，其梯度为：</span>
+        <span class="en">For example, consider the function $f(x) = \frac{1}{2}\|Ax - b\|^2$, whose gradient is:</span>
+      </p>
+      <div class="math-block">
+        $$\nabla f(x) = A^\top (Ax - b)$$
+      </div>
+
+      <p>
+        <span class="zh">在这里继续正文内容……</span>
+        <span class="en">Continue the body text here…</span>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
+  </footer>
+  <script src="../js/lang.js"></script>
+</body>
+</html>
