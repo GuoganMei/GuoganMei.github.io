@@ -181,13 +181,31 @@ main {
   padding: 0;
 }
 
-.pub-list li {
-  padding: 1.25rem 0;
+.pub-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--color-border);
 }
 
-.pub-list li:last-child {
+.pub-item:last-child {
   border-bottom: none;
+}
+
+.pub-thumb {
+  width: 180px;
+  min-width: 180px;
+  height: 126px;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
 }
 
 .pub-title {
@@ -281,5 +299,15 @@ footer {
   nav a {
     border-left: none;
     padding: 0 0.5rem 0 0;
+  }
+
+  .pub-item {
+    flex-direction: column;
+  }
+
+  .pub-thumb {
+    width: 100%;
+    min-width: unset;
+    height: auto;
   }
 }
