@@ -4,19 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <!-- 防闪烁：在渲染前恢复语言设置 -->
-  <script>
-    (function () {
-      var l = localStorage.getItem('site-lang');
-      if (l === 'en') document.documentElement.lang = 'en';
-    })();
-  </script>
-  <script>
-    MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
+  <script>(function(){var l=localStorage.getItem('site-lang');if(l==='en')document.documentElement.lang='en';})();</script>
+  <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};</script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </head>
 <body>
@@ -24,8 +13,10 @@
     <nav>
       <a class="site-name" href="index.html">Your Name</a>
       <a href="about.html"><span class="zh">关于我</span><span class="en">About</span></a>
-      <a href="projects.html"><span class="zh">项目</span><span class="en">Research</span></a>
-      <a href="contact.html"><span class="zh">联系</span><span class="en">Contact</span></a>
+      <a href="publications.html"><span class="zh">出版物</span><span class="en">Publications</span></a>
+      <a href="projects.html"><span class="zh">项目</span><span class="en">Projects</span></a>
+      <a href="blog.html"><span class="zh">博客</span><span class="en">Blog</span></a>
+      <a href="archive.html"><span class="zh">档案</span><span class="en">Archive</span></a>
       <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>

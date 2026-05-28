@@ -304,6 +304,135 @@ footer {
   border-color: var(--color-accent);
   color: var(--color-accent);
 }
+
+/* Active nav link */
+nav a.active {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* Blog list */
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+}
+
+.blog-date {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  min-width: 4.5rem;
+  padding-top: 0.15rem;
+}
+
+.blog-title {
+  display: block;
+  font-weight: bold;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+.blog-title:hover {
+  color: var(--color-accent);
+}
+
+.blog-excerpt {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Archive */
+.archive-desc {
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.archive-year-group {
+  margin-bottom: 1rem;
+}
+
+.archive-year {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 2rem 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+}
+
+.archive-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1rem;
+}
+
+.archive-list li:last-child {
+  border-bottom: none;
+}
+
+.archive-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  flex: 1;
+}
+
+.archive-list a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.archive-date {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+/* Archive type tags */
+.archive-tag {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.1em 0.45em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.tag-pub  { background: #f0e6e6; color: #8b0000; }
+.tag-proj { background: #e6ede6; color: #2d5a2d; }
+.tag-blog { background: #e8e8f0; color: #2d2d6e; }
+
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2rem;
