@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>关于我 - Your Name</title>
   <link rel="stylesheet" href="css/style.css" />
+  <!-- 防闪烁：在渲染前恢复语言设置 -->
+  <script>
+    (function () {
+      var l = localStorage.getItem('site-lang');
+      if (l === 'en') document.documentElement.lang = 'en';
+    })();
+  </script>
   <script>
     MathJax = {
       tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
@@ -17,42 +23,51 @@
   <header>
     <nav>
       <a class="site-name" href="index.html">Your Name</a>
-      <a href="about.html">关于我</a>
-      <a href="projects.html">项目</a>
-      <a href="contact.html">联系</a>
+      <a href="about.html"><span class="zh">关于我</span><span class="en">About</span></a>
+      <a href="projects.html"><span class="zh">项目</span><span class="en">Research</span></a>
+      <a href="contact.html"><span class="zh">联系</span><span class="en">Contact</span></a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="page-content">
-      <h1>关于我</h1>
+      <h1><span class="zh">关于我</span><span class="en">About Me</span></h1>
 
       <p>
-        在这里介绍你自己。例如：我是某某大学某某院系的博士研究生，师从某某教授。
-        主要研究方向为 XXX，核心问题是在满足约束 $\|x\|_0 \leq k$ 的前提下最小化损失函数。
+        <span class="zh">在这里介绍你自己。例如：我是某某大学某某院系的博士研究生，师从某某教授。
+        主要研究方向为 XXX，核心问题是在满足约束 $\|x\|_0 \leq k$ 的前提下最小化损失函数。</span>
+        <span class="en">Introduce yourself here. For example: I am a Ph.D. student at the Department of XXX, University of XXX, advised by Prof. XXX.
+        My research focuses on XXX, particularly minimizing the loss function subject to the constraint $\|x\|_0 \leq k$.</span>
       </p>
 
-      <h2>教育背景</h2>
+      <h2><span class="zh">教育背景</span><span class="en">Education</span></h2>
       <ul>
-        <li>20XX–至今 &nbsp; 博士，某某大学，某某专业</li>
-        <li>20XX–20XX &nbsp; 学士，某某大学，某某专业</li>
+        <li>
+          <span class="zh">20XX–至今 &nbsp; 博士，某某大学，某某专业</span>
+          <span class="en">20XX–present &nbsp; Ph.D., University Name, Major</span>
+        </li>
+        <li>
+          <span class="zh">20XX–20XX &nbsp; 学士，某某大学，某某专业</span>
+          <span class="en">20XX–20XX &nbsp; B.S., University Name, Major</span>
+        </li>
       </ul>
 
       <hr class="section-divider" />
 
-      <h2>研究方向</h2>
+      <h2><span class="zh">研究方向</span><span class="en">Research Interests</span></h2>
       <ul>
-        <li>方向一</li>
-        <li>方向二</li>
-        <li>方向三</li>
+        <li><span class="zh">方向一</span><span class="en">Interest One</span></li>
+        <li><span class="zh">方向二</span><span class="en">Interest Two</span></li>
+        <li><span class="zh">方向三</span><span class="en">Interest Three</span></li>
       </ul>
 
       <hr class="section-divider" />
 
-      <h2>技能</h2>
+      <h2><span class="zh">技能</span><span class="en">Skills</span></h2>
       <ul>
-        <li>编程语言：Python、C++、...</li>
-        <li>工具：LaTeX、Git、...</li>
+        <li><span class="zh">编程语言：Python、C++、...</span><span class="en">Languages: Python, C++, ...</span></li>
+        <li><span class="zh">工具：LaTeX、Git、...</span><span class="en">Tools: LaTeX, Git, ...</span></li>
       </ul>
     </section>
   </main>
@@ -60,5 +75,6 @@
   <footer>
     <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
+  <script src="js/lang.js"></script>
 </body>
 </html>

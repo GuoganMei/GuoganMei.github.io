@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>项目与论文 - Your Name</title>
   <link rel="stylesheet" href="css/style.css" />
+  <!-- 防闪烁：在渲染前恢复语言设置 -->
+  <script>
+    (function () {
+      var l = localStorage.getItem('site-lang');
+      if (l === 'en') document.documentElement.lang = 'en';
+    })();
+  </script>
   <script>
     MathJax = {
       tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
@@ -17,33 +23,40 @@
   <header>
     <nav>
       <a class="site-name" href="index.html">Your Name</a>
-      <a href="about.html">关于我</a>
-      <a href="projects.html">项目</a>
-      <a href="contact.html">联系</a>
+      <a href="about.html"><span class="zh">关于我</span><span class="en">About</span></a>
+      <a href="projects.html"><span class="zh">项目</span><span class="en">Research</span></a>
+      <a href="contact.html"><span class="zh">联系</span><span class="en">Contact</span></a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="page-content">
-      <h1>项目与论文</h1>
+      <h1><span class="zh">项目与论文</span><span class="en">Research &amp; Projects</span></h1>
 
-      <h2>论文</h2>
+      <h2><span class="zh">论文</span><span class="en">Publications</span></h2>
       <ul class="pub-list">
         <li class="pub-item">
           <img class="pub-thumb" src="images/papers/placeholder.svg" alt="论文配图" />
           <div class="pub-body">
-            <p class="pub-title">论文标题（可包含公式，如求解 $Ax = b$ 的高效算法）</p>
-            <p class="pub-meta">Your Name, 合作者. <em>期刊/会议名</em>, 2026.</p>
+            <p class="pub-title">
+              <span class="zh">论文标题（可包含公式，如求解 $Ax = b$ 的高效算法）</span>
+              <span class="en">Paper Title (may include formulas, e.g., efficient algorithms for $Ax = b$)</span>
+            </p>
+            <p class="pub-meta">Your Name, Co-author. <em>Journal / Conference</em>, 2026.</p>
             <a href="#" class="btn">PDF</a>
             &nbsp;
-            <a href="#" class="btn">代码</a>
+            <a href="#" class="btn"><span class="zh">代码</span><span class="en">Code</span></a>
           </div>
         </li>
         <li class="pub-item">
           <img class="pub-thumb" src="images/papers/placeholder.svg" alt="论文配图" />
           <div class="pub-body">
-            <p class="pub-title">另一篇论文标题</p>
-            <p class="pub-meta">Your Name, 合作者. <em>期刊/会议名</em>, 2025.</p>
+            <p class="pub-title">
+              <span class="zh">另一篇论文标题</span>
+              <span class="en">Another Paper Title</span>
+            </p>
+            <p class="pub-meta">Your Name, Co-author. <em>Journal / Conference</em>, 2025.</p>
             <a href="#" class="btn">PDF</a>
           </div>
         </li>
@@ -51,16 +64,22 @@
 
       <hr class="section-divider" />
 
-      <h2>代码项目</h2>
+      <h2><span class="zh">代码项目</span><span class="en">Code Projects</span></h2>
       <div class="project-grid">
         <article class="project-card">
-          <h2>项目名称</h2>
-          <p>简要描述这个项目做什么，解决什么问题。</p>
+          <h2><span class="zh">项目名称</span><span class="en">Project Name</span></h2>
+          <p>
+            <span class="zh">简要描述这个项目做什么，解决什么问题。</span>
+            <span class="en">Brief description of what this project does and what problem it solves.</span>
+          </p>
           <a href="#" class="btn">GitHub</a>
         </article>
         <article class="project-card">
-          <h2>另一个项目</h2>
-          <p>项目简介。</p>
+          <h2><span class="zh">另一个项目</span><span class="en">Another Project</span></h2>
+          <p>
+            <span class="zh">项目简介。</span>
+            <span class="en">Project description.</span>
+          </p>
           <a href="#" class="btn">GitHub</a>
         </article>
       </div>
@@ -70,5 +89,6 @@
   <footer>
     <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
+  <script src="js/lang.js"></script>
 </body>
 </html>

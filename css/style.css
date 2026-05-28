@@ -1,3 +1,7 @@
+/* Language visibility */
+:root:not([lang="en"]) .en { display: none !important; }
+:root[lang="en"]        .zh { display: none !important; }
+
 /* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -280,7 +284,26 @@ footer {
   border-top: 1px solid var(--color-border);
 }
 
-/* Responsive */
+/* Language toggle button */
+#lang-toggle {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.2rem 0.65rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  letter-spacing: 0.03em;
+}
+
+#lang-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2rem;

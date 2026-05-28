@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>联系 - Your Name</title>
   <link rel="stylesheet" href="css/style.css" />
+  <!-- 防闪烁：在渲染前恢复语言设置 -->
+  <script>
+    (function () {
+      var l = localStorage.getItem('site-lang');
+      if (l === 'en') document.documentElement.lang = 'en';
+    })();
+  </script>
   <script>
     MathJax = {
       tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
@@ -17,26 +23,30 @@
   <header>
     <nav>
       <a class="site-name" href="index.html">Your Name</a>
-      <a href="about.html">关于我</a>
-      <a href="projects.html">项目</a>
-      <a href="contact.html">联系</a>
+      <a href="about.html"><span class="zh">关于我</span><span class="en">About</span></a>
+      <a href="projects.html"><span class="zh">项目</span><span class="en">Research</span></a>
+      <a href="contact.html"><span class="zh">联系</span><span class="en">Contact</span></a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="page-content">
-      <h1>联系我</h1>
+      <h1><span class="zh">联系我</span><span class="en">Contact</span></h1>
 
-      <p>欢迎就研究合作、学术交流或其他事项与我联系。</p>
+      <p>
+        <span class="zh">欢迎就研究合作、学术交流或其他事项与我联系。</span>
+        <span class="en">Feel free to reach out for research collaboration, academic exchange, or any other inquiries.</span>
+      </p>
 
-      <h2>邮件</h2>
+      <h2><span class="zh">邮件</span><span class="en">Email</span></h2>
       <p><a href="mailto:your@email.com">your@email.com</a></p>
 
-      <h2>主页 / 社交</h2>
+      <h2><span class="zh">主页 / 社交</span><span class="en">Links</span></h2>
       <ul>
         <li>GitHub：<a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
-        <li>Google Scholar：<a href="#" target="_blank">Scholar 主页</a></li>
-        <li>办公室：某某楼 XXX 室</li>
+        <li>Google Scholar：<a href="#" target="_blank"><span class="zh">Scholar 主页</span><span class="en">Scholar Profile</span></a></li>
+        <li><span class="zh">办公室：某某楼 XXX 室</span><span class="en">Office: Room XXX, Building Name</span></li>
       </ul>
     </section>
   </main>
@@ -44,5 +54,6 @@
   <footer>
     <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
+  <script src="js/lang.js"></script>
 </body>
 </html>
