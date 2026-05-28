@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>个人主页</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">首页</a>
+      <a class="site-name" href="index.html">Your Name</a>
       <a href="about.html">关于我</a>
       <a href="projects.html">项目</a>
       <a href="contact.html">联系</a>
@@ -18,14 +25,38 @@
 
   <main>
     <section class="hero">
-      <h1>你好，我是 <span class="highlight">Your Name</span></h1>
-      <p class="subtitle">一名热爱技术与创造的开发者</p>
-      <a href="about.html" class="btn">了解更多</a>
+      <h1>Your Name</h1>
+      <p class="affiliation">某某大学 · 某某研究所</p>
+      <p class="subtitle">研究方向：某某领域、某某方向</p>
+      <a href="about.html" class="btn">个人简介</a>
+      &nbsp;
+      <a href="projects.html" class="btn">研究成果</a>
+    </section>
+
+    <section class="page-content">
+      <h2>近期动态</h2>
+      <ul>
+        <li>2026.05 — 论文《...》已投稿至 XXX。</li>
+        <li>2026.03 — 参加了 XXX 会议并做口头报告。</li>
+      </ul>
+
+      <hr class="section-divider" />
+
+      <h2>研究兴趣</h2>
+      <p>
+        简要介绍你的研究方向。例如，研究目标是求解如下最优化问题：
+      </p>
+      <div class="math-block">
+        $$\min_{x \in \mathbb{R}^n} f(x) \quad \text{s.t.} \quad g(x) \leq 0$$
+      </div>
+      <p>
+        其中 $f: \mathbb{R}^n \to \mathbb{R}$ 为目标函数，$g$ 为约束条件。
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
 </body>
 </html>

@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>关于我 - 个人主页</title>
+  <title>关于我 - Your Name</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">首页</a>
+      <a class="site-name" href="index.html">Your Name</a>
       <a href="about.html">关于我</a>
       <a href="projects.html">项目</a>
       <a href="contact.html">联系</a>
@@ -19,18 +26,39 @@
   <main>
     <section class="page-content">
       <h1>关于我</h1>
-      <p>在这里介绍你自己、你的背景、技能和兴趣。</p>
+
+      <p>
+        在这里介绍你自己。例如：我是某某大学某某院系的博士研究生，师从某某教授。
+        主要研究方向为 XXX，核心问题是在满足约束 $\|x\|_0 \leq k$ 的前提下最小化损失函数。
+      </p>
+
+      <h2>教育背景</h2>
+      <ul>
+        <li>20XX–至今 &nbsp; 博士，某某大学，某某专业</li>
+        <li>20XX–20XX &nbsp; 学士，某某大学，某某专业</li>
+      </ul>
+
+      <hr class="section-divider" />
+
+      <h2>研究方向</h2>
+      <ul>
+        <li>方向一</li>
+        <li>方向二</li>
+        <li>方向三</li>
+      </ul>
+
+      <hr class="section-divider" />
 
       <h2>技能</h2>
       <ul>
-        <li>HTML / CSS / JavaScript</li>
-        <li>其他技能...</li>
+        <li>编程语言：Python、C++、...</li>
+        <li>工具：LaTeX、Git、...</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
 </body>
 </html>

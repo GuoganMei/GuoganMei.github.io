@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>项目 - 个人主页</title>
+  <title>项目与论文 - Your Name</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">首页</a>
+      <a class="site-name" href="index.html">Your Name</a>
       <a href="about.html">关于我</a>
       <a href="projects.html">项目</a>
       <a href="contact.html">联系</a>
@@ -18,19 +25,44 @@
 
   <main>
     <section class="page-content">
-      <h1>我的项目</h1>
+      <h1>项目与论文</h1>
+
+      <h2>论文</h2>
+      <ul class="pub-list">
+        <li>
+          <p class="pub-title">论文标题（可包含公式，如求解 $Ax = b$ 的高效算法）</p>
+          <p class="pub-meta">Your Name, 合作者. <em>期刊/会议名</em>, 2026.</p>
+          <a href="#" class="btn">PDF</a>
+          &nbsp;
+          <a href="#" class="btn">代码</a>
+        </li>
+        <li>
+          <p class="pub-title">另一篇论文标题</p>
+          <p class="pub-meta">Your Name, 合作者. <em>期刊/会议名</em>, 2025.</p>
+          <a href="#" class="btn">PDF</a>
+        </li>
+      </ul>
+
+      <hr class="section-divider" />
+
+      <h2>代码项目</h2>
       <div class="project-grid">
         <article class="project-card">
           <h2>项目名称</h2>
-          <p>项目简介...</p>
-          <a href="#" class="btn">查看详情</a>
+          <p>简要描述这个项目做什么，解决什么问题。</p>
+          <a href="#" class="btn">GitHub</a>
+        </article>
+        <article class="project-card">
+          <h2>另一个项目</h2>
+          <p>项目简介。</p>
+          <a href="#" class="btn">GitHub</a>
         </article>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
 </body>
 </html>

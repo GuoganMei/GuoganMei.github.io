@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>联系 - 个人主页</title>
+  <title>联系 - Your Name</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">首页</a>
+      <a class="site-name" href="index.html">Your Name</a>
       <a href="about.html">关于我</a>
       <a href="projects.html">项目</a>
       <a href="contact.html">联系</a>
@@ -19,13 +26,23 @@
   <main>
     <section class="page-content">
       <h1>联系我</h1>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+
+      <p>欢迎就研究合作、学术交流或其他事项与我联系。</p>
+
+      <h2>邮件</h2>
+      <p><a href="mailto:your@email.com">your@email.com</a></p>
+
+      <h2>主页 / 社交</h2>
+      <ul>
+        <li>GitHub：<a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>Google Scholar：<a href="#" target="_blank">Scholar 主页</a></li>
+        <li>办公室：某某楼 XXX 室</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
 </body>
 </html>
