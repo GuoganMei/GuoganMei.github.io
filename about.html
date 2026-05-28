@@ -22,44 +22,63 @@
   </header>
 
   <main>
-    <section class="page-content">
-      <h1><span class="zh">关于我</span><span class="en">About Me</span></h1>
+    <section class="about-layout">
 
-      <p>
-        <span class="zh">在这里介绍你自己。例如：我是某某大学某某院系的博士研究生，师从某某教授。
-        主要研究方向为 XXX，核心问题是在满足约束 $\|x\|_0 \leq k$ 的前提下最小化损失函数。</span>
-        <span class="en">Introduce yourself here. For example: I am a Ph.D. student at the Department of XXX, University of XXX, advised by Prof. XXX.
-        My research focuses on XXX, particularly minimizing the loss function subject to the constraint $\|x\|_0 \leq k$.</span>
-      </p>
+      <!-- 左栏：照片 + 基本信息 -->
+      <aside class="about-sidebar">
+        <img class="profile-photo" src="images/profile.svg" alt="Profile photo" />
+        <h1 class="profile-name">Your Name</h1>
+        <p class="profile-affil">
+          <span class="zh">某某大学<br>某某研究所</span>
+          <span class="en">University Name<br>Research Institute</span>
+        </p>
+        <p class="profile-email"><a href="mailto:your@email.com">your@email.com</a></p>
+        <div class="profile-links">
+          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Google Scholar</a>
+          <a href="#" target="_blank">CV</a>
+        </div>
+      </aside>
 
-      <h2><span class="zh">教育背景</span><span class="en">Education</span></h2>
-      <ul>
-        <li>
-          <span class="zh">20XX–至今 &nbsp; 博士，某某大学，某某专业</span>
-          <span class="en">20XX–present &nbsp; Ph.D., University Name, Major</span>
-        </li>
-        <li>
-          <span class="zh">20XX–20XX &nbsp; 学士，某某大学，某某专业</span>
-          <span class="en">20XX–20XX &nbsp; B.S., University Name, Major</span>
-        </li>
-      </ul>
+      <!-- 右栏：正文内容 -->
+      <div class="about-body page-content">
+        <p>
+          <span class="zh">在这里介绍你自己。例如：我是某某大学某某院系的博士研究生，师从某某教授。
+          主要研究方向为 XXX，核心问题是在满足约束 $\|x\|_0 \leq k$ 的前提下最小化损失函数。</span>
+          <span class="en">Introduce yourself here. For example: I am a Ph.D. student at the Department of XXX, University of XXX, advised by Prof. XXX.
+          My research focuses on XXX, particularly minimizing the loss function subject to the constraint $\|x\|_0 \leq k$.</span>
+        </p>
 
-      <hr class="section-divider" />
+        <h2><span class="zh">教育背景</span><span class="en">Education</span></h2>
+        <ul>
+          <li>
+            <span class="zh">20XX–至今 &nbsp; 博士，某某大学，某某专业</span>
+            <span class="en">20XX–present &nbsp; Ph.D., University Name, Major</span>
+          </li>
+          <li>
+            <span class="zh">20XX–20XX &nbsp; 学士，某某大学，某某专业</span>
+            <span class="en">20XX–20XX &nbsp; B.S., University Name, Major</span>
+          </li>
+        </ul>
 
-      <h2><span class="zh">研究方向</span><span class="en">Research Interests</span></h2>
-      <ul>
-        <li><span class="zh">方向一</span><span class="en">Interest One</span></li>
-        <li><span class="zh">方向二</span><span class="en">Interest Two</span></li>
-        <li><span class="zh">方向三</span><span class="en">Interest Three</span></li>
-      </ul>
+        <hr class="section-divider" />
 
-      <hr class="section-divider" />
+        <h2><span class="zh">研究方向</span><span class="en">Research Interests</span></h2>
+        <ul>
+          <li><span class="zh">方向一</span><span class="en">Interest One</span></li>
+          <li><span class="zh">方向二</span><span class="en">Interest Two</span></li>
+          <li><span class="zh">方向三</span><span class="en">Interest Three</span></li>
+        </ul>
 
-      <h2><span class="zh">技能</span><span class="en">Skills</span></h2>
-      <ul>
-        <li><span class="zh">编程语言：Python、C++、...</span><span class="en">Languages: Python, C++, ...</span></li>
-        <li><span class="zh">工具：LaTeX、Git、...</span><span class="en">Tools: LaTeX, Git, ...</span></li>
-      </ul>
+        <hr class="section-divider" />
+
+        <h2><span class="zh">技能</span><span class="en">Skills</span></h2>
+        <ul>
+          <li><span class="zh">编程语言：Python、C++、...</span><span class="en">Languages: Python, C++, ...</span></li>
+          <li><span class="zh">工具：LaTeX、Git、...</span><span class="en">Tools: LaTeX, Git, ...</span></li>
+        </ul>
+      </div>
+
     </section>
   </main>
 
