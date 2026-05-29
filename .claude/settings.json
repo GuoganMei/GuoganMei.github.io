@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/post-edit-commit.sh",
+            "timeout": 30,
+            "statusMessage": "更新 README 并提交..."
+          }
+        ]
+      }
+    ]
+  }
+}

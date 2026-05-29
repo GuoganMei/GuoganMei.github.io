@@ -81,7 +81,7 @@ git add -A
 CHANGED=$(git diff --cached --name-only | head -8 | tr '\n' '、' | sed 's/、$//')
 DATE=$(date '+%Y-%m-%d %H:%M')
 
-git commit -m "$(cat <<EOF
+LANG=zh_CN.UTF-8 LC_ALL=zh_CN.UTF-8 git commit -m "$(cat <<EOF
 更新代码：${CHANGED}
 
 由 Claude Code 自动提交（${DATE}）
