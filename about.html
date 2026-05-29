@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
   <script>(function(){var l=localStorage.getItem('site-lang');if(l==='en')document.documentElement.lang='en';})();</script>
   <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};</script>
@@ -18,7 +18,6 @@
       <a href="projects.html"><span class="zh">项目</span><span class="en">Projects</span></a>
       <a href="blog.html"><span class="zh">博客</span><span class="en">Blog</span></a>
       <a href="archive.html"><span class="zh">档案</span><span class="en">Archive</span></a>
-      <a href="stats.html"><span class="zh">统计</span><span class="en">Stats</span></a>
       <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>
@@ -26,23 +25,7 @@
   <main>
     <section class="about-layout">
 
-      <!-- 左栏：照片 + 基本信息 -->
-      <aside class="about-sidebar">
-        <img class="profile-photo" src="images/profile.svg" alt="Profile photo" />
-        <h1 class="profile-name">Your Name</h1>
-        <p class="profile-affil">
-          <span class="zh">某某大学<br>某某研究所</span>
-          <span class="en">University Name<br>Research Institute</span>
-        </p>
-        <p class="profile-email"><a href="mailto:your@email.com">your@email.com</a></p>
-        <div class="profile-links">
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Google Scholar</a>
-          <a href="#" target="_blank">CV</a>
-        </div>
-      </aside>
-
-      <!-- 右栏：正文内容 -->
+      <!-- 左栏：正文内容 -->
       <div class="about-body page-content">
         <p>
           <span class="zh">在这里介绍你自己。例如：我是某某大学某某院系的博士研究生，师从某某教授。
@@ -80,6 +63,22 @@
           <li><span class="zh">工具：LaTeX、Git、...</span><span class="en">Tools: LaTeX, Git, ...</span></li>
         </ul>
       </div>
+
+      <!-- 右栏：照片 + 基本信息 -->
+      <aside class="about-sidebar">
+        <img class="profile-photo" src="images/profile.svg" alt="Profile photo" />
+        <h1 class="profile-name">Your Name</h1>
+        <p class="profile-affil">
+          <span class="zh">某某大学<br>某某研究所</span>
+          <span class="en">University Name<br>Research Institute</span>
+        </p>
+        <p class="profile-email"><a href="mailto:your@email.com">your@email.com</a></p>
+        <div class="profile-links">
+          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Google Scholar</a>
+          <a href="#" target="_blank">CV</a>
+        </div>
+      </aside>
 
     </section>
   </main>

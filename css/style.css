@@ -599,3 +599,150 @@ nav a.active {
   cursor: default;
   user-select: none;
 }
+
+/* ── 访客统计（嵌入档案页底部）── */
+.visitor-stats {
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 2rem;
+}
+
+.visitor-stats h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.stats-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.stat-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  flex: 1;
+  min-width: 130px;
+  background: var(--color-surface);
+}
+
+.stat-card .stat-num {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--color-accent);
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.stat-card .stat-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.map-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.map-card h3 {
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#visitor-map {
+  height: 340px;
+  width: 100%;
+}
+
+.country-list {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.country-list h3 {
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#country-rows { padding: 0.4rem 0; }
+
+.country-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.country-row:last-child { border-bottom: none; }
+
+.country-bar-wrap {
+  flex: 1;
+  background: var(--color-border);
+  border-radius: 2px;
+  height: 5px;
+  overflow: hidden;
+}
+
+.country-bar {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.country-count {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  min-width: 2ch;
+  text-align: right;
+}
+
+.no-data {
+  padding: 1rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.stats-note {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}

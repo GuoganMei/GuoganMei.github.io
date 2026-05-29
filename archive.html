@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Leaflet（地图） -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>(function(){var l=localStorage.getItem('site-lang');if(l==='en')document.documentElement.lang='en';})();</script>
 </head>
 <body>
@@ -16,7 +19,6 @@
       <a href="projects.html"><span class="zh">项目</span><span class="en">Projects</span></a>
       <a href="blog.html"><span class="zh">博客</span><span class="en">Blog</span></a>
       <a href="archive.html" class="active"><span class="zh">档案</span><span class="en">Archive</span></a>
-      <a href="stats.html"><span class="zh">统计</span><span class="en">Stats</span></a>
       <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>
@@ -97,6 +99,50 @@
         </ul>
       </div>
 
+      <!-- ── 访客统计 ── -->
+      <div class="visitor-stats">
+        <h2><span class="zh">访客统计</span><span class="en">Visitor Stats</span></h2>
+        <p class="stats-subtitle">
+          <span class="zh">数据存储于本地浏览器，仅供参考。白点为最新访问。</span>
+          <span class="en">Data stored locally in your browser. White dot = latest visit.</span>
+        </p>
+
+        <div class="stat-cards">
+          <div class="stat-card">
+            <span class="stat-num" id="visitor-count">—</span>
+            <span class="stat-label"><span class="zh">总访问次数</span><span class="en">Total Visits</span></span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" id="unique-countries">—</span>
+            <span class="stat-label"><span class="zh">来源国家/地区</span><span class="en">Countries</span></span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" id="unique-cities">—</span>
+            <span class="stat-label"><span class="zh">来源城市</span><span class="en">Cities</span></span>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <h3>
+            <span class="zh">访问地图</span><span class="en">Visitor Map</span>
+            <span id="geo-status" style="font-size:0.75rem;font-weight:normal;color:var(--color-text-muted);margin-left:0.75rem;font-family:var(--font-sans)"></span>
+          </h3>
+          <div id="visitor-map"></div>
+        </div>
+
+        <div class="country-list">
+          <h3><span class="zh">来源地区排行</span><span class="en">Top Regions</span></h3>
+          <div id="country-rows">
+            <p class="no-data"><span class="zh">暂无数据</span><span class="en">No data yet</span></p>
+          </div>
+        </div>
+
+        <p class="stats-note">
+          <span class="zh">⚠ 数据仅存储在当前浏览器的 localStorage 中，清除浏览器数据后归零。地理位置通过 ipapi.co 获取，精度约为城市级别。</span>
+          <span class="en">⚠ Data lives in this browser's localStorage and resets when browser data is cleared. Geolocation via ipapi.co (city-level accuracy).</span>
+        </p>
+      </div>
+
     </section>
   </main>
 
@@ -105,6 +151,51 @@
   </footer>
   <script src="js/lang.js"></script>
   <script src="js/visitors.js"></script>
-  <script>document.addEventListener("DOMContentLoaded",function(){if(window.initVisitors)initVisitors();});</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      initVisitors();
+      renderCountryList();
+      document.addEventListener('visitor:geo-resolved', renderCountryList);
+    });
+
+    function renderCountryList() {
+      const visits = JSON.parse(localStorage.getItem('site-visitors') || '[]');
+      const totalEl = document.getElementById('visitor-count');
+      const countEl = document.getElementById('unique-countries');
+      const cityEl  = document.getElementById('unique-cities');
+      const rowsEl  = document.getElementById('country-rows');
+
+      if (totalEl) {
+        const n = parseInt(localStorage.getItem('site-visit-count') || '0', 10);
+        totalEl.textContent = n.toLocaleString();
+      }
+
+      const countryMap = {};
+      const citySet = new Set();
+      visits.forEach(v => {
+        const c = v.country || 'Unknown';
+        countryMap[c] = (countryMap[c] || 0) + 1;
+        if (v.city) citySet.add(v.city + ',' + c);
+      });
+
+      const countryList = Object.entries(countryMap).sort((a, b) => b[1] - a[1]);
+      const maxVal = countryList[0]?.[1] || 1;
+
+      countEl.textContent = countryList.length || '0';
+      cityEl.textContent  = citySet.size || '0';
+
+      if (countryList.length === 0) return;
+
+      rowsEl.innerHTML = countryList.map(([name, cnt]) => `
+        <div class="country-row">
+          <span style="min-width:120px">${name}</span>
+          <div class="country-bar-wrap">
+            <div class="country-bar" style="width:${Math.round(cnt/maxVal*100)}%"></div>
+          </div>
+          <span class="country-count">${cnt}</span>
+        </div>
+      `).join('');
+    }
+  </script>
 </body>
 </html>

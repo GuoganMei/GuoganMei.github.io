@@ -15,7 +15,6 @@ learn_claude/
 ├── publications.html      # 出版物
 ├── stats.html             # 访客统计
 ├── viewer.html            # PDF 阅读器
-├── favicon.svg            # 网站图标
 ├── css/
 │   └── style.css          # 全局样式，学术风格
 ├── js/
