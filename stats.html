@@ -193,7 +193,10 @@
 
       <!-- 世界地图 -->
       <div class="map-card">
-        <h2><span class="zh">访问地图</span><span class="en">Visitor Map</span></h2>
+        <h2>
+          <span class="zh">访问地图</span><span class="en">Visitor Map</span>
+          <span id="geo-status" style="font-size:0.75rem;font-weight:normal;color:var(--color-text-muted);margin-left:0.75rem;font-family:var(--font-sans)"></span>
+        </h2>
         <div id="visitor-map"></div>
       </div>
 
@@ -226,11 +229,14 @@
   <script src="js/visitors.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // 初始化访客记录 + 地图
+      // 初始化访客记录 + 地图（计数 + geo 异步进行）
       initVisitors();
 
-      // 渲染国家排行
+      // 页面加载时先渲染已有数据（可能是历史数据）
       renderCountryList();
+
+      // geo 数据到位后再刷新一次（覆盖第一次的空状态）
+      document.addEventListener('visitor:geo-resolved', renderCountryList);
     });
 
     function renderCountryList() {
@@ -238,6 +244,13 @@
       const countEl = document.getElementById('unique-countries');
       const cityEl  = document.getElementById('unique-cities');
       const rowsEl  = document.getElementById('country-rows');
+
+      // 同步更新总访问次数（geo 到位后数字可能已更新）
+      const totalEl = document.getElementById('visitor-count');
+      if (totalEl) {
+        const n = parseInt(localStorage.getItem('site-visit-count') || '0', 10);
+        totalEl.textContent = n.toLocaleString();
+      }
 
       // 统计国家
       const countryMap = {};

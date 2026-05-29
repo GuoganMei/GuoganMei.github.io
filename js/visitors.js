@@ -42,11 +42,16 @@
     const countEl = document.getElementById('visitor-count');
     if (countEl) countEl.textContent = newCount.toLocaleString();
 
+    // 显示正在定位提示
+    const statusEl = document.getElementById('geo-status');
+    if (statusEl) statusEl.textContent = '⌛ 正在获取位置…';
+
     // 异步获取 IP 地理位置
     fetch(GEO_API)
       .then(r => r.json())
       .then(data => {
         const { latitude, longitude, city, country_name } = data;
+        if (statusEl) statusEl.textContent = '';
         if (!latitude || !longitude) return;
 
         const visits = getVisits();
@@ -63,8 +68,13 @@
         if (window._visitorMap) {
           addMarker(window._visitorMap, visits[visits.length - 1], true);
         }
+
+        // 通知 stats 页面重新渲染国家排行
+        document.dispatchEvent(new CustomEvent('visitor:geo-resolved'));
       })
-      .catch(() => { /* 离线或 API 限流时静默忽略 */ });
+      .catch(() => {
+        if (statusEl) statusEl.textContent = '（位置获取失败）';
+      });
   }
 
   // ── 在地图上添加一个标记 ──────────────────────────────────
