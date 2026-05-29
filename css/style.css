@@ -583,3 +583,19 @@ nav a.active {
     height: auto;
   }
 }
+
+/* ── Scramble 字符闪动效果 ── */
+.sc-active {
+  color: var(--color-accent);
+  opacity: 0.85;
+}
+.sc-dim {
+  color: var(--color-text-muted);
+  opacity: 0.35;
+}
+
+/* 标题加 cursor，提示可悬停 */
+.about-body h2 {
+  cursor: default;
+  user-select: none;
+}

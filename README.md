@@ -6,14 +6,24 @@
 
 ```
 learn_claude/
-├── index.html       # 首页
-├── about.html       # 关于我
-├── projects.html    # 项目展示
-├── contact.html     # 联系方式
+├── about.html             # 关于我
+├── archive.html           # 档案
+├── blog.html              # 博客
+├── contact.html           # 联系方式
+├── index.html             # 首页
+├── projects.html          # 项目展示
+├── publications.html      # 出版物
+├── stats.html             # 访客统计
+├── viewer.html            # PDF 阅读器
+├── favicon.svg            # 网站图标
 ├── css/
-│   └── style.css    # 全局样式
-├── CLAUDE.md        # Claude Code 项目说明
-└── README.md        # 本文件
+│   └── style.css          # 全局样式，学术风格
+├── js/
+│   └── lang.js            # 中英双语切换
+│   └── scramble.js        # 字符闪动效果
+│   └── visitors.js        # 访客计数与地图
+├── CLAUDE.md              # Claude Code 项目说明
+└── README.md              # 本文件
 ```
 
 ## 快速开始

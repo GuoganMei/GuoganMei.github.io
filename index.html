@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
   <script>(function(){var l=localStorage.getItem('site-lang');if(l==='en')document.documentElement.lang='en';})();</script>
   <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};</script>
@@ -17,6 +18,7 @@
       <a href="projects.html"><span class="zh">项目</span><span class="en">Projects</span></a>
       <a href="blog.html"><span class="zh">博客</span><span class="en">Blog</span></a>
       <a href="archive.html"><span class="zh">档案</span><span class="en">Archive</span></a>
+      <a href="stats.html"><span class="zh">统计</span><span class="en">Stats</span></a>
       <button id="lang-toggle" aria-label="Switch language">EN</button>
     </nav>
   </header>
@@ -73,5 +75,7 @@
     <p>&copy; 2026 Your Name &nbsp;·&nbsp; your@email.com</p>
   </footer>
   <script src="js/lang.js"></script>
+  <script src="js/visitors.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){if(window.initVisitors)initVisitors();});</script>
 </body>
 </html>
